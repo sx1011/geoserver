@@ -1,11 +1,10 @@
-package com.example.geoserver.geoserver;
+package com.example.geoserver.config;
 
 //import com.zykj.didiao.common.util.common.FileUtil;
 import it.geosolutions.geoserver.rest.GeoServerRESTManager;
 import it.geosolutions.geoserver.rest.GeoServerRESTPublisher;
 import it.geosolutions.geoserver.rest.GeoServerRESTReader;
 import it.geosolutions.geoserver.rest.decoder.RESTDataStore;
-import it.geosolutions.geoserver.rest.decoder.RESTLayer;
 import it.geosolutions.geoserver.rest.encoder.GSAbstractStoreEncoder;
 import it.geosolutions.geoserver.rest.encoder.datastore.GSGeoTIFFDatastoreEncoder;
 import it.geosolutions.geoserver.rest.manager.GeoServerRESTStoreManager;
@@ -68,10 +67,10 @@ public class GeoServer {
         GeoServer.imageWorkspace = imageWorkspace;
     }
 
-    @Value("${localdir.style}")
+    /*@Value("${localdir.style}")
     public void setStylePath(String stylePath) {
         GeoServer.stylePath = stylePath;
-    }
+    }*/
 
     /**
      * 判断工作区（workspace）是否存在，不存在则创建
